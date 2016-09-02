@@ -33,11 +33,7 @@ public class Societe {
         this.fax = fax;
         this.email = email;
     }
-
-    public Societe() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
     public String getNom() {
         return nom;
     }
@@ -116,6 +112,11 @@ public class Societe {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return nom + prenom + numRueAdresse + ", cp=" + cp + ", ville=" + ville + ", pays=" + pays + ", telephone=" + telephone + ", telephonePortable=" + telephonePortable + ", fax=" + fax + ", email=" + email + '}';
     }
     
 }
